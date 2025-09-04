@@ -18,5 +18,9 @@ describe('Testes da Função de Soma', function () {
         const resultadoDaSoma = somarDoisNumeros(-5, -3);
         expect(resultadoDaSoma).to.equal(-8);
     });
-
+    it('A função deve ser capaz de realizar a soma de dois numeros vazios', function (){
+        const resultadoDaSoma = somarDoisNumeros(0, 0);
+        expect(resultadoDaSoma).to.equal(0);
+    });
+    
 });
